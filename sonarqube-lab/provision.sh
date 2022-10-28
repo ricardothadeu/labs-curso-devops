@@ -26,8 +26,10 @@ service sonar start
 
 wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip
 unzip sonar-scanner-cli-4.6.2.2472-linux.zip -d /opt/
-mv /opt/sonar-scanner-cli-4.6.2.2472-linux /opt/sonar-scanner
+mv /opt/sonar-scanner-4.6.2.2472-linux /opt/sonar-scanner
 chown -R sonar:sonar /opt/sonar-scanner
 echo 'export PATH=$PATH:/opt/sonar-scanner/bin' | sudo tee -a /etc/profile
 curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -
 sudo yum install nodejs -y
+
+#c3bfacf17d3f862bc1e1955be9e9f96f92544ef3
