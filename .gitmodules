@@ -1,0 +1,3 @@
+[submodule "jenkins-lab/redis-app"]
+	path = jenkins-lab/redis-app
+	url = git@github.com:ricardothadeu/redis-app.git
